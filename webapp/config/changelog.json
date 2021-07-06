@@ -1,0 +1,54 @@
+{
+   "versions":[
+      {
+         "version":"1.1.1",
+         "changes":[
+            "Upgrading Nuxt package to version 2.14.12"
+         ]
+      },
+      {
+         "version":"1.1.0",
+         "changes":[
+            "Updating the version of the main components/technologies used in the project",
+            "Upgrading Nuxt package to version 2.13.3",
+            "Upgrading Bootstrap package to version 4.5.0",
+            "Upgrading Feathers package and its subpackages to version 4.5.3",
+            "Upgrading Feathers-vuex integration package to version 3.10.4",
+            "Fully functional authentication system",
+            "Small visual improvements"
+         ]
+      },
+      {
+         "version":"1.0.7",
+         "changes":[
+            "Improving the look of chat, email and events pages",
+            "Small corrections of responsiveness",
+            "Load time improvements"
+         ]
+      },
+      {
+         "version":"1.0.3",
+         "changes":[
+            "Adding more ready-to-use components",
+            "General improvements on major dashboards",
+            "Updating packages responsible for database connection",
+            "Updating micro service management packages",
+            "Adjustments in Echarts components"
+         ]
+      },
+      {
+         "version":"1.0.1",
+         "changes":[
+            "Minor fixes on main layout",
+            "Upgrading boostrap version to 4.3.1",
+            "Adjustments in Echarts components"
+         ]
+      },
+      {
+         "version":"1.0.0",
+         "changes":[
+            "Initial release"
+         ]
+      }
+   ]
+}

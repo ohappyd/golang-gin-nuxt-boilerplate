@@ -1,0 +1,64 @@
+@import "../../mixin/_color.scss";
+
+// Color Settings
+
+$theme-color-mixed-color: #fff;
+$theme-color-mixed-percent: 7%;
+$theme-color-mixed-percent-1: 35%;
+$theme-color-mixed-opacity: 0.85;
+
+$theme-color-darkness-percent: 90%;
+
+$theme1-map: get-color-map($theme1);
+$secondary-map: get-color-map($secondary);
+
+$body-color: $theme2;
+
+//Overide some variables based on skin to generate new bs4
+$pagination-active-bg: $primary;
+$pagination-active-border-color: $primary;
+$chartPallete: $primary, $secondary, $theme1, $theme2, $theme3;
+$card-cap-bg: #ffffff;
+$card-bg: #ffffff;
+
+$pagination-bg: #ffffff;
+$pagination-hover-bg: $gray-200;
+$pagination-disabled-bg: #ffffff;
+
+$pagination-active-color: $primary;
+$pagination-active-bg: mix($primary, white, 6%);
+
+$table-color: $theme1;
+$table-head-bg: map-get($secondary-map, "mixed");
+$table-active-bg: map-get($theme1-map, "mixed");
+$table-border-color: map-get($theme1-map, "mixed");
+$table-hover-bg: map-get($secondary-map, "mixed");
+
+//List Group
+$list-group-bg: $theme1inv;
+$list-group-action-active-bg: $theme2inv;
+
+// Side menu main variables
+$theme-side-color: $theme1;
+$theme-side-bg: $theme1inv;
+$theme-side-color2: $theme2;
+$theme-side-bg2: $theme2inv;
+$theme-side-color3: $theme3;
+$theme-side-bg3: $theme3inv;
+$theme-side-logo-color: $primary;
+$theme-side-logo-color2: $theme1;
+$theme-side-logo-bg: $theme3inv;
+$theme-side-icon-color: $theme1;
+
+$theme-side-scroll-color: $theme1inv;
+
+$theme-navtop-bg: $theme1inv;
+$theme-navtop-color: $theme1;
+$theme-navtop-item-color: $theme1;
+
+$theme-border-color: mix(#fff, map-get($theme1-map, "mixed"), 70%);
+
+$theme-header-bg-extended: transparent;
+$theme-side-box-shadow: 8px 0px 50px -23px #dcdce8;
+
+$list-group-border-color: map-get($theme1-map, "mixed");

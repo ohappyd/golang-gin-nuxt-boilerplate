@@ -1,0 +1,38 @@
+@import "../base/_default-colors.scss";
+
+$primary: #dbdddc; //!default; //#51328e; //#672FB0; //
+$secondary: #c7c7d2; //#766893; //$gray-600; //#6C618C;
+$success: #67d980;
+$info: #79b5f2;
+$warning: #f7f08a;
+$danger: #f2878d;
+$light: $gray-300; //$theme3;//
+$dark: $gray-800;
+
+$theme1: #f0f0f0; //#462988;
+$theme2: #b5b0b0;
+$theme3: #a8a6a6; //Used also on light state and  text-muted class
+
+$theme1inv: #1f2022;
+$theme2inv: #2d2e31;
+$theme3inv: #363739;
+
+@import "./_default-dark-init.scss";
+
+$theme-navtop-bg: #ffffff;
+$theme-body-image: linear-gradient(to top right, #565659 0%, $theme3inv 100%);
+
+$theme-side-color: #c8c8ce;
+$theme-side-bg: #060606;
+$theme-side-bg2: #151414;
+$theme-side-logo-bg: #ffffff;
+$theme-side-logo-color: #565659;
+$theme-side-icon-color: #eaeaea;
+
+$theme-color-mixed-percent: 20%;
+$theme-color-mixed-percent-1: 40%;
+
+$theme-navtop-color: $secondary;
+$theme-navtop-item-color: $theme1;
+
+@import "./_default-dark-export.scss";

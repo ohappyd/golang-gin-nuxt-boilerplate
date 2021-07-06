@@ -1,0 +1,18 @@
+@import "../base/_default-colors.scss";
+
+$primary: #0084b0; //!default; //#51328e; //#672FB0; //
+$secondary: #f94702; //#766893; //$gray-600; //#6C618C;
+$success: #15e117;
+$info: #5bc0eb;
+$warning: #ffe971;
+$danger: #ff0000;
+$light: $gray-300; //$theme3;//
+$dark: $gray-800;
+
+$theme1: #f0f0f0; //#462988;
+$theme2: #e3e3e3;
+$theme3: #b5b5b5; //Used also on light state and  text-muted class
+
+@import "./template/_bg-dark.scss";
+@import "./_default-dark-init.scss";
+@import "./_default-dark-export.scss";

@@ -1,0 +1,18 @@
+@import "../skin/_blue.scss";
+
+$chartPallete: $primary, $secondary, $theme1, $theme2, $theme3;
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  success: $success;
+  info: $info;
+  warning: $warning;
+  danger: $danger;
+  light: $light;
+  dark: $dark;
+  theme1: $theme1;
+  theme2: $theme2;
+  theme3: $theme3;
+  chartPallete: $chartPallete;
+}

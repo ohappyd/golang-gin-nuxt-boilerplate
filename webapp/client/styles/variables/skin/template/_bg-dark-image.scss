@@ -1,0 +1,16 @@
+//Inverse colors : Used as background in cards and more
+
+$theme1inv: #545353;
+$theme2inv: #666666;
+$theme3inv: #8a8a8a;
+
+//$theme-body-image: url("http://www.kabu-load.net/data/out/101/IMG_950904.jpg");
+$theme-body-image: url("http://www.kabu-load.net/data/out/101/IMG_950919.jpg");
+//$theme-body-image: url("http://www.kabu-load.net/data/out/101/IMG_950924.jpg");
+$theme-body-image: url("http://www.kabu-load.net/data/out/3/IMG_660525.jpg");
+
+:export {
+  theme1inv: $theme1inv;
+  theme2inv: $theme2inv;
+  theme3inv: $theme3inv;
+}

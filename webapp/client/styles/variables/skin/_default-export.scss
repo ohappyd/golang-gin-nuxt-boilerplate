@@ -1,0 +1,40 @@
+@import "../../mixin/_color.scss";
+
+$list-colors-map: [];
+
+@function to-string($value) {
+  @return inspect($value);
+}
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace +
+      str-replace(
+        str-slice($string, $index + str-length($search)),
+        $search,
+        $replace
+      );
+  }
+
+  @return $string;
+}
+
+$colors: $theme-colors;
+
+$colors-map: ();
+
+//Generate color map list to send to JS (we cant send inner maps, then we use string list)
+
+@each $key, $value in $colors {
+  $map: ();
+  $mapValue: str-replace(
+    to-string(create-color-map($key, $value, 35%, $theme-color-mixed-opacity)),
+    ",",
+    ";"
+  );
+  $list-colors-map: append($list-colors-map, $mapValue, $separator: comma);
+}
+
+$theme-colors-map: $list-colors-map; //$colors-map;

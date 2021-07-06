@@ -1,0 +1,20 @@
+.box {
+  padding: 15px;
+  background-color: $gray-100;
+
+  &.sm-box {
+    padding: 10px;
+    font-size: 80%;
+  }
+  &.modern {
+    border2-left: 1px solid $primary;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 8px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 8px -6px rgba(0, 0, 0, 0.2);
+
+    &.condensed {
+      margin-bottom: 1px;
+    }
+  }
+}

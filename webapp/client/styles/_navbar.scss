@@ -1,0 +1,12 @@
+.navbar-nav {
+  flex-direction: row;
+  align-items: center;
+  .nav-item {
+    flex: 1;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  float: none;
+}

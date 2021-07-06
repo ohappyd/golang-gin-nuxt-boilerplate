@@ -1,0 +1,85 @@
+@import "../../mixin/_color.scss";
+
+// Side menu main variables
+$theme-side-color: $theme1;
+$theme-side-bg: $theme1inv;
+$theme-side-color2: $theme2;
+$theme-side-bg2: $theme2inv;
+$theme-side-color3: $theme3;
+$theme-side-bg3: $theme3inv;
+$theme-side-logo-color: $theme1inv;
+$theme-side-logo-color2: $theme2inv;
+$theme-side-logo-bg: $theme2;
+$theme-side-icon-color: $theme1;
+$theme-side-box-shadow: 8px 0px 50px -23px $theme1inv;
+
+$theme-side-scroll-color: $theme1inv;
+
+$theme-navtop-bg: $theme1inv;
+$theme-navtop-color: $theme1;
+$theme-navtop-item-color: $theme1;
+
+$theme-header-bg-extended: transparent;
+
+// Color Settings
+$theme-color-mixed-color: $theme1inv;
+$theme-color-mixed-percent: 10%;
+$theme-color-mixed-percent-1: 30%;
+$theme-color-mixed-opacity: 1;
+
+//Use to controle inverse version of buttons
+$theme-color-darkness-percent: 0%;
+
+/* END THEME SETTINGS*/
+
+$theme1-map: get-color-map($theme1);
+$secondary-map: get-color-map($secondary);
+
+$theme-border-color: map-get($theme1-map, "mixed");
+
+//New theme state colors
+$body-color: $theme2;
+
+//Bootstrap variables
+$card-cap-bg: $theme1inv;
+$card-bg: $theme1inv;
+
+$pagination-active-bg: theme-color("primary");
+$pagination-active-border-color: theme-color("primary");
+
+$border-color: $theme3inv;
+
+//Breadcumb
+$breadcrumb-active-color: $theme3;
+$breadcrumb-bg: transparent;
+// Links
+$link-color: lighten($theme1, 10%);
+$link-hover-color: lighten($theme1, 20%);
+
+// Tables
+$table-head-color: $theme1;
+$table-head-bg: map-get($secondary-map, "mixed");
+$table-color: $theme1;
+$table-active-bg: map-get($theme1-map, "mixed");
+$table-hover-color: $theme1;
+$table-border-color: map-get($theme1-map, "mixed");
+$table-hover-bg: map-get($secondary-map, "mixed");
+
+//List Group
+$list-group-bg: $theme1inv;
+$list-group-action-active-bg: $theme2inv;
+$list-group-border-color: map-get($theme1-map, "mixed");
+
+//Paginations
+$pagination-bg: $theme1inv;
+$pagination-color: $primary;
+$pagination-hover-color: $theme1;
+$pagination-hover-bg: darken($primary, 20%);
+$pagination-active-color: $primary;
+$pagination-active-bg: darken($theme1inv, 2%);
+$pagination-disabled-bg: $theme1inv;
+
+$dropdown-link-hover-bg: $theme1inv;
+
+//Theme variables
+$chartPallete: $primary, $secondary, $theme1, $theme2, $theme3;

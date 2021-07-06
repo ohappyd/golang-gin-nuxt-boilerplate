@@ -1,0 +1,13 @@
+//Inverse colors : Used as background in cards and more
+
+$theme1inv: #545353;
+$theme2inv: #666666;
+$theme3inv: #8a8a8a;
+
+$theme-body-image: linear-gradient(to right top, #cccccc, #626262);
+
+:export {
+  theme1inv: $theme1inv;
+  theme2inv: $theme2inv;
+  theme3inv: $theme3inv;
+}

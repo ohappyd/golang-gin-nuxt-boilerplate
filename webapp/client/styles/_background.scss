@@ -1,0 +1,13 @@
+@each $color in $theme-colors {
+  .bg-gradient-#{nth($color,1)} {
+    //background-color: nth($color,2);
+    background-image: linear-gradient(
+      to bottom right,
+      nth($color, 2),
+      darken(nth($color, 2), 5%),
+      darken(nth($color, 2), 10%),
+      darken(nth($color, 2), 15%),
+      darken(nth($color, 2), 30%)
+    );
+  }
+}

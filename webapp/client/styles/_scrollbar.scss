@@ -1,0 +1,121 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+//Active scroll on elemennt
+.ig-active-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+
+  & > * {
+    position: absolute;
+  }
+}
+.small-scroll,
+.table-responsive {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; //darken($theme-side-bg, 10%);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary-mixed); //lighten($secondary, 10%);
+    border: 10px solid rgba(255, 255, 255, 0);
+    //Cut bg after border applied
+    background-clip: padding-box;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: var(--primary-mixed-1); //lighten($secondary, 10%);
+      background-clip: padding-box;
+    }
+  }
+}
+
+.ghost-scroll {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar-track {
+    background: transparent; //darken($theme-side-bg, 10%);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: mix($primary, $theme1inv, 10%);
+    border: 10px solid rgba(255, 255, 255, 0);
+    //Cut bg after border applied
+    background-clip: padding-box;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: mix($primary, $theme1inv, 30%);
+      background-clip: padding-box;
+    }
+  }
+}
+
+.small-scroll.ghost {
+  &::-webkit-scrollbar-track {
+    background: $theme-side-scroll-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent; //var(--primary); //lighten($secondary, 10%);
+    border: 10px solid rgba(255, 255, 255, 0);
+    background-clip: padding-box;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: mix(
+        $theme-side-scroll-color,
+        $theme1inv,
+        80%
+      ); //lighten($secondary, 10%);
+      background-clip: padding-box;
+    }
+  }
+}
+
+.small-scroll.trans {
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent; //var(--primary); //lighten($secondary, 10%);
+    border: 10px solid rgba(255, 255, 255, 0);
+    background-clip: padding-box;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: mix($primary, $theme1inv, 30%);
+      background-clip: padding-box;
+    }
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $theme1inv;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--theme1-mixed-1);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--theme1-mixed-1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme1-mixed-1); // $primary;
+}

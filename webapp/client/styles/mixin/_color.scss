@@ -1,0 +1,26 @@
+// Check contrast ratio and return correct color
+@function contrast-color($color, $dark, $light, $threshold: 55%) {
+  @return if(lightness($color) < $threshold, $light, $dark);
+}
+
+// DOTCOMMA is used as separator in object string
+@function create-color-map($key, $color, $percentage: 50%, $opacity: 1) {
+  $map: (
+    name: $key,
+    base: $color,
+    light: lighten($color, $percentage),
+    dark: darken($color, $percentage),
+    mixed: mix($color, $theme-color-mixed-color, $theme-color-mixed-percent),
+    mixed-1: mix($color, $theme-color-mixed-color, $theme-color-mixed-percent-1),
+    trans:
+      str-replace(to-string(transparentize($color, $opacity)), ",", "[COMMA]")
+  );
+  //@debug $map;
+  @return $map;
+}
+
+// Get color map
+@function get-color-map($color) {
+  //@debug $map;
+  @return create-color-map("color", $color, $percentage: 50%, $opacity: 1);
+}

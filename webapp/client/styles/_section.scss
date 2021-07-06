@@ -1,0 +1,112 @@
+@import "./mixin/_breakpoint.scss";
+
+.ig-grid-view {
+  .ig-grid-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    & > div {
+      min-height: 400px;
+      max-height: 500px;
+      flex-basis: calc(50% - 1rem);
+      -ms-flex: auto;
+      width: calc(50% - 1rem);
+      margin-bottom: 2rem;
+
+      box-sizing: border-box;
+
+      & > div {
+        box-shadow: $themeShadow1; //-6px 6px 20px -10px rgba(0, 0, 0, 0.34), inset 0px 0px 2px 1px rgba(255, 255, 255, 0.4) !important
+        position: relative;
+        border-radius: $theme-border-radius;
+        background-color: $theme1inv;
+        padding: 1.7rem 1.4rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .ig-wrapping-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      color: currentColor;
+    }
+
+    .ig-grid-item-wrapper {
+      box-sizing: initial;
+      background: #ececec;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+
+      transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+        margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .ig-grid-item-container {
+      height: 100%;
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+
+.section-title {
+  padding: 15px;
+}
+
+.section-subtitle {
+  padding-right: 15%;
+}
+
+.section-body {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+}
+
+@include respond-below(lg) {
+  .section-subtitle {
+    padding-right: 10%;
+  }
+
+  .section-body {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+
+@include respond-below(md) {
+  .section-subtitle {
+    padding-right: 0%;
+  }
+
+  .section-body {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+main > div > section:not(.no-bg),
+.section-page {
+  background-color: $theme1inv;
+  padding: 10px 25px;
+  box-shadow: $themeShadow1; //-6px 6px 20px -10px rgba(0, 0, 0, 0.34), inset 0px 0px 2px 1px rgba(255, 255, 255, 0.4) !important
+  position: relative;
+  border-radius: $theme-border-radius;
+}
+.section-page {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,37 @@
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark,
+  theme1inv: $theme1inv,
+  theme2inv: $theme2inv,
+  theme3inv: $theme3inv,
+  theme1: $theme1,
+  theme2: $theme2,
+  theme3: $theme3
+);
+
+@import "./_default-export.scss";
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  success: $success;
+  info: $info;
+  warning: $warning;
+  danger: $danger;
+  light: $light;
+  dark: $dark;
+  theme1: $theme1;
+  theme2: $theme2;
+  theme3: $theme3;
+  theme1inv: $theme1inv;
+  theme2inv: $theme2inv;
+  theme3inv: $theme3inv;
+  chartPallete: $chartPallete;
+  variants: $theme-colors-map;
+}

@@ -1,0 +1,39 @@
+@import "../base/_default-colors.scss";
+
+$primary: #e9e0f0; //!default; //#51328e; //#672FB0; //
+$secondary: #f0f1ff; //#766893; //$gray-600; //#6C618C;
+$success: #dcf9f8;
+$info: #cfe3f6;
+$warning: #f4efd8;
+$danger: #f0cac6;
+$light: $gray-300; //$theme3;//
+$dark: $gray-800;
+
+$text-muted: #ffffff;
+
+$theme1: #f0f0f0; //#462988;
+$theme2: #e3e3e3;
+$theme3: #b5b5b5; //Used also on light state and  text-muted class
+
+//@import "./template/_bg-dark-image.scss";
+
+$theme1inv: #3a1c71;
+$theme2inv: #2e1759;
+$theme3inv: $theme1inv;
+
+$theme-body-image: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+$theme-card-opacity: 1;
+$theme-card-hover-opacity: 1;
+
+@import "./_default-dark-init.scss";
+
+$theme-side-color: darken($theme1inv, 20%);
+$theme-side-bg: #ffffff;
+$theme-side-bg2: #ffffff;
+$theme-side-logo-bg: #a69d9d;
+$theme-side-logo-color: #d76d77;
+
+$theme-navtop-color: $theme1;
+$theme-navtop-item-color: $theme1;
+
+@import "./_default-dark-export.scss";

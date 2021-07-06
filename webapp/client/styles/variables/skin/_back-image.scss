@@ -1,0 +1,37 @@
+@import "../base/_default-colors.scss";
+
+//New theme state colors
+$theme1: #686873; //#462988;
+$theme2: #76878c;
+$theme3: #858586; //Used also on light state and  text-muted class
+
+$primary: #7d8484; //!default; //#51328e; //#672FB0; //
+$secondary: #90909d; //#766893; //$gray-600; //#6C618C;
+$success: #80b580;
+$info: #6c8197;
+$warning: #d0b055;
+$danger: #bf8195;
+$light: $gray-300; //$theme3;//
+$dark: $gray-700;
+
+$theme1inv: #ffffff;
+$theme2inv: #fbfbfb;
+$theme3inv: #f4f4f4;
+
+@import "./_default-light-init.scss";
+
+$theme-body-image: url("/img/bg/5.jpg") no-repeat left top fixed;
+$theme-body-bg-size: cover;
+
+$card-bg: #ffffff;
+$card-cap-bg: #ffffff;
+
+$theme-side-color: #ffffff;
+$theme-side-bg: #8e8e8e;
+$theme-side-bg2: #8e8e8e;
+$theme-side-logo-bg: #1c1a1a;
+$theme-side-logo-color: #eaecf4;
+$theme-side-logo-color2: #e6e6ea;
+$theme-side-icon-color: #ffffff;
+
+@import "./_default-light-export.scss";

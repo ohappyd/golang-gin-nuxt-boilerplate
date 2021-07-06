@@ -1,0 +1,206 @@
+@import "./mixin/_breakpoint.scss";
+
+.ig-is-scrolling {
+  header.ig-main-header {
+    height: $theme-header-height - 5px !important;
+    // transition: all 0.5, height 0.5s ease-in, background-color 1.7s ease-in !important;
+    transition: all 0.3s ease-in;
+    box-shadow: $themeShadow1;
+    z-index: 1;
+    margin-bottom: 5px;
+  }
+
+  &.ig-header-bg-on-scroll header.ig-main-header {
+    background-color: $theme-navtop-bg;
+  }
+
+  .extended-nav-top {
+    display: none;
+  }
+}
+
+header.ig-main-header {
+  & > div > nav {
+    height: 100%;
+  }
+
+  margin-bottom: 5px;
+
+  box-sizing: border-box;
+  height: $theme-header-height;
+  transition: all 0.5s ease-out;
+
+  &.header-extended {
+    height: $theme-header-height-extended;
+
+    & > div > nav {
+      height: $theme-header-height;
+    }
+  }
+
+  .header-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .theme-nav-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    & > nav {
+      //border: 3px solid rgba(255, 248, 248, 0.05);
+      padding: 0.4rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .extra-item div > button.btn.dropdown-item,
+  a.dropdown-item {
+    padding: 11px 30px !important;
+    color: $theme-navtop-item-color;
+    display: flex;
+    align-items: center;
+  }
+
+  button.btn {
+    padding: 0;
+  }
+  .navbar-light .navbar-nav .nav-link.active {
+    color: var(--theme1);
+  }
+
+  .scroll-dropdown {
+    & > .dropdown-menu {
+      max-height: calc(100vh - #{$theme-header-height} - 70px);
+      /*display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      overflow: auto;
+      align-content: flex-start;
+      writing-mode: vertical-lr;
+    */
+      column-count: 2;
+      & > li {
+        min-width: 250px;
+        display: inline-block;
+        //width: 100%;
+      }
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+
+  .dropdown-menu {
+    font-size: $theme-navbar-font-size;
+    box-shadow: 5px 20px 50px 0 rgba(125, 123, 123, 0.26);
+    z-index: 1; //Up to side context
+    color: var(--theme1);
+
+    li > div,
+    li > div > div,
+    .btn-group {
+      width: 100%;
+    }
+    .nav-link {
+      //padding: 0 !important;
+      //padding-left: 0 !important;
+    }
+
+    & > a.nav-link.dropdown-toggle {
+      padding: 11px 30px !important;
+
+      .item-title {
+        color: $theme-navtop-item-color;
+      }
+    }
+
+    .item-title {
+      color: $theme-navtop-item-color;
+    }
+  }
+
+  .item-title {
+    font-size: $theme-navbar-font-size;
+    color: $theme-navtop-color;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    .nav-link {
+      color: $theme-navtop-item-color;
+      padding: 11px 30px;
+    }
+
+    i {
+      font-size: 8px;
+      color: var(--theme3);
+      margin-left: auto;
+    }
+  }
+
+  .text-navtop {
+    color: $theme-navtop-color;
+
+    &:not(i) {
+      font-weight: 600;
+    }
+  }
+}
+
+.dropright .item-title {
+  i {
+    transform: rotate(-90deg);
+  }
+}
+
+.animated {
+  .dropdown:hover > .dropdown-menu {
+    pointer-events: auto;
+    opacity: 1;
+    margin-top: 0px;
+    transition: all 0.5s ease-out;
+
+    //This psuedo element fix mouse on hover problem on top menu,
+    &::after {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      //background-color: red;
+      visibility: hidden;
+      content: "";
+      animation: dropdown-anim 0.5s;
+    }
+  }
+
+  .dropdown > .dropdown-menu {
+    opacity: 0;
+    margin-top: 40px;
+    display: block;
+    pointer-events: none;
+    transition: all 1s ease-out;
+  }
+}
+
+@keyframes dropdown-anim {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+@include respond-below(sm) {
+  .navbar {
+    padding: 0;
+  }
+}
+
+@include respond-above(md) {
+  .navbar-expand-md .navbar-toggler {
+    display: none !important;
+  }
+}

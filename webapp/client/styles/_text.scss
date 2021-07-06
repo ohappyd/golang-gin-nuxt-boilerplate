@@ -1,0 +1,34 @@
+$class: text-;
+
+// loops through 100 times
+@for $i from 1 through 100 {
+  // for each $col_#{i}
+  .#{$class}#{$i} {
+    // set the background-color to cornflowerblue and
+    // each time lighten the color slightly
+    font-size: 0px + $i;
+  }
+}
+
+@each $color in $theme-colors {
+  .text-#{nth($color,1)}.mixed {
+    color: mix(
+      nth($color, 2),
+      $theme1inv,
+      $theme-color-mixed-percent
+    ) !important; //lighten(nth($color, 2), 55%);
+  }
+  .text-#{nth($color,1)}.mixed-1 {
+    color: mix(
+      nth($color, 2),
+      $theme1inv,
+      $theme-color-mixed-percent-1
+    ) !important; //lighten(nth($color, 2), 55%);
+  }
+}
+
+code {
+  background-color: var(--primary-mixed);
+  color: $primary;
+  padding: 2px;
+}

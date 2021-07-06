@@ -1,0 +1,9 @@
+//@import "../styles.scss";
+@import "../variables/skin/_grey.scss";
+@import "../variables/base/all.scss";
+@import "../variables/base/_sidemenu.scss";
+/* change style with new variable bootstrap default components ... */
+.skin-grey {
+  // Default light fixs
+  @import "./default-light.scss";
+}

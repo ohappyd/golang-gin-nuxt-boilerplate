@@ -1,0 +1,10 @@
+//@import "../styles.scss";
+
+/* change style with new variable bootstrap default components ... */
+.skin-purple {
+  @import "../variables/base/all.scss";
+  @import "../variables/skin/_purple.scss";
+  @import "../variables/base/_sidemenu.scss";
+  // Default light fixs
+  @import "./default-light.scss";
+}

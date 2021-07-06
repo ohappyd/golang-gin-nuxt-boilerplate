@@ -1,0 +1,45 @@
+& {
+  // Overwirte Bootstrap
+  @import "~bootstrap/scss/mixins/_background-variant.scss";
+  @import "~bootstrap/scss/utilities/_background.scss";
+  @import "~bootstrap/scss/utilities/_borders.scss";
+  @import "~bootstrap/scss/utilities/_text.scss";
+  @import "~bootstrap/scss/_alert.scss";
+  @import "~bootstrap/scss/_badge.scss";
+
+  @import "~bootstrap/scss/_buttons.scss";
+  @import "~bootstrap/scss/_breadcrumb.scss";
+  @import "~bootstrap/scss/_card.scss";
+  @import "~bootstrap/scss/_pagination.scss";
+  @import "~bootstrap/scss/_progress.scss";
+  @import "~bootstrap/scss/_tables.scss";
+  @import "~bootstrap/scss/_list-group.scss";
+
+  @import "../_link.scss";
+  @import "../_sidemenu.scss";
+  @import "../_section.scss";
+
+  @each $color, $value in $theme-colors {
+    --#{$color}: #{$value};
+  }
+
+  background-image: $theme-body-image;
+  color: #fff;
+
+  .shadow,
+  .card:not(.no-bg) {
+    box-shadow: none !important;
+  }
+
+  .card:not(.no-bg) {
+    opacity: $theme-card-opacity;
+  }
+
+  code {
+    color: lighten($primary, 30%);
+  }
+
+  .dropdown-menu {
+    background-color: $theme1inv;
+  }
+}

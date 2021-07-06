@@ -1,0 +1,47 @@
+@import "../base/_default-colors.scss";
+
+//New theme state colors
+$theme1: #012712; //#462988;
+$theme2: #134316;
+$theme3: #134316; //Used also on light state and  text-muted class
+
+$primary: #89b5ad; //!default; //#51328e; //#672FB0; //
+$secondary: #899fb5; //#766893; //$gray-600; //#6C618C;
+$success: #2ec47d;
+$info: #2ec47d;
+$warning: #e3de94;
+$danger: #ee5956;
+$light: $gray-300; //$theme3;//
+$dark: $gray-700;
+
+@import "./template/_bg-light.scss";
+@import "./_default-light-init.scss";
+
+$theme-navtop-color: $theme1;
+$component-active-color: #89b5ad;
+$component-active-bg: #fff;
+
+$dropdown-link-active-color: $component-active-color;
+$nav-pills-link-active-color: $component-active-color;
+$list-group-active-color: $component-active-color;
+
+$list-group-active-bg: $component-active-bg;
+$dropdown-link-active-bg: $component-active-bg;
+$nav-pills-link-active-bg: $component-active-bg;
+
+$theme-body-image: linear-gradient(to right top, #ffffff, #fdfffc, #fdfffc);
+
+$theme-navtop-color: $theme1;
+
+$theme-side-padding: 0px;
+$theme-side-radius: 0px;
+$theme-side-bg: $theme1;
+$theme-side-bg2: #011c0d;
+$theme-side-color: #ffffff;
+$theme-side-icon-color: #ffffff;
+$theme-side-logo-color2: #a8d5cc;
+
+$theme-side-padding: 0px;
+$theme-side-radius: 8px;
+
+@import "./_default-light-export.scss";

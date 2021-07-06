@@ -1,0 +1,20 @@
+$theme-menu-compacted-width: 145px;
+$theme-menu-icon-width: 100px;
+$theme-menu-width: 240px;
+$theme-context-width: 240px;
+$theme-context-width-lg: 190px;
+$theme-context-width-sm: 100%;
+
+$theme-header-height: 85px;
+$theme-header-space: 40px; //Padding on header, separator content and header
+
+$theme-header-height-extended: 150px;
+
+:export {
+  theme-menu-compacted-width: $theme-menu-compacted-width;
+  theme-menu-width: $theme-menu-width;
+  theme-context-width: $theme-context-width;
+  theme-header-height: $theme-header-height;
+  theme-header-height-extended: $theme-header-height-extended;
+  theme-header-space: $theme-header-space;
+}

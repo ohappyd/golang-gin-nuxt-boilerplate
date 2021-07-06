@@ -1,0 +1,8 @@
+.skin-green {
+  // Default light fixs
+  @import "../variables/base/all.scss";
+  @import "../variables/skin/_green.scss";
+
+  @import "../variables/base/_sidemenu.scss";
+  @import "./_default-light.scss";
+}

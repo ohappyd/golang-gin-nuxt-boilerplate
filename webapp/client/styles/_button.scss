@@ -1,0 +1,71 @@
+.btn-unique {
+  margin-right: 3px;
+  min-width: 33px;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn-white {
+  background-color: $theme1inv;
+  //box-shadow: $themeShadow1;
+  color: $primary;
+  border-color: transparent;
+}
+
+.btn-square {
+  width: 33px !important;
+  height: 33px !important;
+  position: relative;
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+  }
+}
+
+.btn-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@each $color in $theme-colors {
+  .btn-#{nth($color,1)}.inverse.ig-ghost {
+    background-color: transparent !important;
+
+    &:hover {
+      background-color: mix(
+        nth($color, 2),
+        $theme1inv,
+        $theme-color-mixed-percent
+      ) !important; //lighten(nth($color, 2), 55%);
+    }
+  }
+  .btn-#{nth($color,1)}.inverse,
+  .bg-#{nth($color,1)}.inverse {
+    @if lightness(nth($color, 2)) < $theme-color-darkness-percent {
+      background-color: mix(
+        nth($color, 2),
+        white,
+        $theme-color-mixed-percent
+      ) !important; //lighten(nth($color, 2), 55%);
+
+      color: nth($color, 2) !important;
+    } @else {
+      background-color: mix(
+        nth($color, 2),
+        $theme1inv,
+        $theme-color-mixed-percent
+      ) !important; //lighten(nth($color, 2), 55%);
+
+      color: lighten(nth($color, 2), 5%) !important;
+    }
+
+    border-color: transparent; //lighten(nth($color, 2), 20%);
+  }
+}

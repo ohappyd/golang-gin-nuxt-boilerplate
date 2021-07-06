@@ -1,0 +1,12 @@
+//@import "../styles.scss";
+
+/* change style with new variable bootstrap default components ... */
+.skin-color-dark-sky {
+  @import "../variables/base/all.scss";
+  @import "../variables/skin/_color-dark-sky.scss";
+  @import "../variables/base/_sidemenu.scss";
+
+  // Default dark fixs
+  @import "./_default-dark.scss";
+  /* custom styles from style.scss overrides ... */
+}

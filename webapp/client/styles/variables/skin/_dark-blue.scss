@@ -1,0 +1,41 @@
+@import "../base/_default-colors.scss";
+
+$primary: #e1e0f4; //!default; //#51328e; //#672FB0; //
+$secondary: #8291bb; //#bdc7e3; //#766893; //$gray-600; //#6C618C;
+$success: #67d9b5;
+$info: #4a80b7;
+$warning: #f4ef9f;
+$danger: #f47196;
+$light: $gray-300; //$theme3;//
+$dark: $gray-800;
+
+$theme1: #f0f0f0; //#462988;
+$theme2: #e3e3e3;
+$theme3: #b5b5b5; //Used also on light state and  text-muted class
+
+$theme1inv: #0f204f;
+$theme2inv: #0e1d48;
+$theme3inv: #0d1c46;
+
+@import "./_default-dark-init.scss";
+
+$theme-navtop-bg: #ffffff;
+$theme-body-image: linear-gradient(to top right, #00082f 0%, $theme3inv 100%);
+
+$theme-side-color: $primary;
+$theme-side-icon-color: $primary;
+$theme-side-bg: #030a1c;
+$theme-side-bg2: #01040d;
+//$theme-side-logo-bg: #ffffff;
+$theme-side-logo-color: #fff;
+$theme-side-padding: 0px;
+$theme-side-radius: 0px;
+
+//$theme-navtop-color: $theme1inv;
+
+$theme-navtop-color: $secondary;
+$theme-navtop-item-color: #fff;
+//$theme-color-mixed-percent: 50%;
+//$theme-color-mixed-percent-1: 70%;
+
+@import "./_default-dark-export.scss";

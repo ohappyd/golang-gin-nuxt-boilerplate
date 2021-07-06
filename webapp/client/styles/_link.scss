@@ -1,0 +1,10 @@
+body {
+  a {
+    color: var(--theme1);
+  }
+
+  a:hover {
+    color: var(--theme1);
+    text-shadow: 0 0 1px var(--theme1-mixed-1);
+  }
+}

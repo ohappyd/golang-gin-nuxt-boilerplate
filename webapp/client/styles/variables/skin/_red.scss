@@ -1,0 +1,19 @@
+@import "../base/_default-colors.scss";
+
+//New theme state colors
+$theme1: #5c5d68; //#462988;
+$theme2: #8d99ae;
+$theme3: #858586; //Used also on light state and  text-muted class
+
+$primary: #d90429; //!default; //#51328e; //#672FB0; //
+$secondary: #818288; //#766893; //$gray-600; //#6C618C;
+$success: $green;
+$info: #4a80b7;
+$warning: #f1c23e;
+$danger: #b54d4f;
+$light: $gray-300; // $theme3;//
+$dark: $gray-800;
+
+@import "./template/_bg-light.scss";
+@import "./_default-light-init.scss";
+@import "./_default-light-export.scss";

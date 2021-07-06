@@ -1,0 +1,115 @@
+{ 
+   "default":{ 
+      "headerBoxed":false,
+      "headerBg":"transparent",
+      "headerExtended":false,
+      "headerExtendedBg":"#ffffff",
+      "headerBgOnScroll": false, 
+      "headerIconLighten": true, 
+			"breadcrumbHide": true,
+      "contentBoxed":false,
+      "menuLogoBg":"transparent",
+      "menuCompacted":false,
+      "menuMinimized":true,
+      "menuHide":false,
+     	"menuIconIndex": 0,
+      "menuContinuous":true,
+      "menuDark":true,
+      "topMenuHide":false,
+      "contextBarHide":false,
+      "skin":"blue"
+   },
+   "layouts":{ 
+     "demo1":{ 
+         "breadcrumbHide": false,
+         "headerBg":"#fff",
+         "menuCompacted":false,
+         "menuMinimized":false,
+         "skin":"material"
+      },
+      "demo2":{ 
+         "headerBoxed":true,
+         "headerBg":"transparent",
+         "headerBgOnScroll": false,
+         "contentBoxed":true,
+         "menuMinimized":true,
+         "menuIconIndex": 0,
+      	 "skin":"blue"
+     
+        
+      },
+      "demo3":{ 
+         "menuCompacted":false,
+         "contentBoxed":true,
+         "headerBoxed":true,
+         "headerBgOnScroll": true,
+         "menuMinimized":true,
+         "skin":"purple",
+         "menuLogoBg":"#FFF"
+      },
+      "demo4":{ 
+         "menuMinimized":true,
+         "menuCompacted":false,
+         "headerBoxed":true,
+         "contentBoxed":true,
+         "skin":"color-carbon",
+         "menuIconIndex": 0
+      },
+      "demo5":{ 
+         "headerBoxed":true,
+         "contentBoxed":true,
+         "menuHide":false,
+         "menuMinimized":true,
+         "menuContinuous":true,
+         "skin":"grey"
+      },
+      "demo6":{ 
+         "menuMinimized":true,
+         "menuCompacted":false,
+         "headerBg":"#fff",
+         "menuLogoBg":"#F5F7FB",
+         "headerIconLighten": false,
+         "headerBoxed":true,
+         "breadcrumbHide":false,
+         "contentBoxed":true,
+         "skin":"dark-blue"
+      },
+      "demo7":{
+         "headerBoxed":false,
+         "breadcrumbHide": false,
+         "contentBoxed":false,
+         "menuHide":false,
+         "menuContinuous":true,
+         "menuCompacted":false,
+         "menuMinimized":false,
+         "headerBg":"#fff",
+         "skin":"green"
+      },
+      "demo8":{ 
+         "headerBoxed":true,
+         "headerBg":"transparent",
+         "contentBoxed":true,
+         "menuHide":true,
+         "menuContinuous":false,
+         "menuMinimized":false,
+         "headerExtended":true,
+         "skin":"blue"
+      },
+      "demo9":{ 
+         "menuLogoBg":"#868585",
+         "headerBoxed":true,
+         "contentBoxed":true,
+         "menuMinimized":true,
+         "skin":"back-image"
+      },
+      "demo10":{ 
+         "breadcrumbHide": false,
+         "menuCompacted":false,
+         "menuMinimized":true,
+         "headerBg":"linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%)",
+         "skin":"blue-light",
+         "headerBoxed":true,
+         "contentBoxed":true
+      }
+   }
+}

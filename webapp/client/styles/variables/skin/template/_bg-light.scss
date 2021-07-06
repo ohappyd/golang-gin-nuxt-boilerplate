@@ -1,0 +1,29 @@
+//Inverse colors : Used as background in cards and more
+$theme1inv: #ffffff;
+$theme2inv: #fbfbfb;
+$theme3inv: #f4f4f4;
+
+$theme-body-image: linear-gradient(to right top, #f5f5fb, #f9f9fc, #fbfbfb);
+/*#E6E6E6
+$t#F2F2F2dy-image: linear-gradient(
+  to right top,
+  #a7acb5,
+  #bec3cc,
+  #d4d7dd,
+  #cbcdde,
+  #e2e2ec,
+  #e9e9f0,
+  #f0f0f3,
+  #f7f7f7,
+  #f1f1f1,
+  #ebebeb,
+  #e6e6e6,
+  #f2f2f2
+);
+*/
+
+:export {
+  theme1inv: $theme1inv;
+  theme2inv: $theme2inv;
+  theme3inv: $theme3inv;
+}

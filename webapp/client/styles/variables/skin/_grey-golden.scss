@@ -1,0 +1,25 @@
+@import "../base/_default-colors.scss";
+
+$primary: #f2b700; //!default; //#51328e; //#672FB0; //
+$secondary: #424242; //#766893; //$gray-600; //#6C618C;
+$success: #d1dd07;
+$info: #4a80b7;
+$warning: #ffcb00;
+$danger: #ff7e00;
+$light: $gray-300; //$theme3;//
+$dark: $gray-800;
+
+@import "./template/_bg-light.scss";
+
+$theme1inv: #ffffff;
+$theme2inv: #fbfbfb;
+$theme3inv: #f4f4f4;
+
+$theme-body-image: linear-gradient(to right top, #14213d, $theme1inv);
+
+$theme1: #000; //#462988;
+$theme2: #14213d;
+$theme3: #8d8d95; //Used also on light state and  text-muted class
+
+@import "./_default-light-init.scss";
+@import "./_default-light-export.scss";

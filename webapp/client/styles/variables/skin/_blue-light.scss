@@ -1,0 +1,33 @@
+@import "../base/_default-colors.scss";
+
+//New theme state colors
+$theme1: #151567;
+$theme2: #272742;
+$theme3: #8d8d95;
+
+$primary: #6d58d9; //#334d91; //!default; //#51328e; //#672FB0; //
+$secondary: #949db9; //#777797;
+$success: #27b727;
+$info: #4a80b7;
+$warning: #f1c23e;
+$danger: #f8466c;
+$light: $gray-300; //$theme3;//
+$dark: $gray-800;
+
+@import "./template/_bg-light.scss";
+@import "./_default-light-init.scss";
+
+$theme-side-color: $primary;
+$theme-side-bg: #ffffff; //#13182c;
+$theme-side-bg2: #fdfdfd;
+$theme-side-logo-color: #ffffff;
+$theme-side-logo-color2: #9ca1b9;
+$theme-side-logo-bg: #f8466c;
+
+$theme-navtop-color: #eaecf2;
+
+$theme-side-icon-color: $theme1;
+$theme-side-padding: 0px;
+$theme-side-radius: 0px;
+
+@import "./_default-light-export.scss";

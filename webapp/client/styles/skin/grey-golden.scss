@@ -1,0 +1,10 @@
+//@import "../styles.scss";
+@import "../variables/skin/_grey-golden.scss";
+@import "../variables/base/_sidemenu.scss";
+@import "../variables/base/all.scss";
+/* change style with new variable bootstrap default components ... */
+.skin-grey-golden {
+  // Default dark fixs
+  @import "./default-light.scss";
+  /* custom styles from style.scss overrides ... */
+}

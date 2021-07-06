@@ -1,0 +1,31 @@
+@import "../base/_default-colors.scss";
+
+//New theme state colors
+$theme1: #685c7b; //#462988;
+$theme2: #4a4355;
+$theme3: #4a4355; //Used also on light state and  text-muted class
+
+$primary: #65528a; //!default; //#51328e; //#672FB0; //
+$secondary: #90879f; //#766893; //$gray-600; //#6C618C;
+$success: $green;
+$info: #4a80b7;
+$warning: #f1c23e;
+$danger: #d40c4c;
+$light: $gray-300; // $theme3;//
+$dark: $gray-800;
+
+@import "./template/_bg-light.scss";
+@import "./_default-light-init.scss";
+
+$theme-side-color: $theme1;
+$theme-side-bg: #fff;
+$theme-side-bg2: #fefdff;
+$theme-side-logo-bg: #fff;
+$theme-side-icon-color: $theme1;
+
+$theme-side-scroll-color: #f4effb;
+
+$theme-side-padding: 0px;
+$theme-side-radius: 0px;
+
+@import "./_default-light-export.scss";

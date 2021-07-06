@@ -1,0 +1,29 @@
+//@import "../base/all.scss";
+
+//New theme state colors
+$theme1: #52338f; //#462988;
+$theme2: #32778e;
+$theme3: #858586; //Used also on light state and  text-muted class
+
+$primary: #65528a; //#51328e; //#672FB0; //
+$secondary: #90879f; //#766893; //$gray-600; //#6C618C;
+$success: $green;
+$info: #4a80b7;
+$warning: #f1c23e;
+$danger: #d40c4c;
+$light: $gray-300; //$theme3;//
+$dark: $gray-800;
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  success: $success;
+  info: $info;
+  warning: $warning;
+  danger: $danger;
+  light: $light;
+  dark: $dark;
+  theme1: $theme1;
+  theme2: $theme2;
+  theme3: $theme3;
+}

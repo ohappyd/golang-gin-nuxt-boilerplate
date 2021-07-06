@@ -1,0 +1,11 @@
+$class: opacity-;
+
+// loops through 100 times
+@for $i from 1 through 10 {
+  // for each $col_#{i}
+  .#{$class}#{$i} {
+    // set the background-color to cornflowerblue and
+    // each time lighten the color slightly
+    opacity: 0.1 * $i;
+  }
+}

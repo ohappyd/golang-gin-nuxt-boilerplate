@@ -1,0 +1,40 @@
+@import "./mixin/_color";
+@import "./variables/skin/_blue";
+@import "./variables/base/all";
+@import "~bootstrap/scss/bootstrap";
+@import "./variables/base/_sidemenu.scss";
+@import "./_background.scss";
+@import "./_badge.scss";
+@import "./_body.scss";
+@import "./_box.scss";
+@import "./_boxshadow.scss";
+@import "./_breadcrumb.scss";
+@import "./_button.scss";
+@import "./_card.scss";
+@import "./_dropdown.scss";
+@import "./_form.scss";
+@import "./_icon.scss";
+@import "./_image.scss";
+@import "./_layout.scss";
+@import "./_link.scss";
+@import "./_header.scss";
+@import "./_navbar.scss";
+@import "./_opacity.scss";
+@import "./_round.scss";
+@import "./_scrollbar.scss";
+@import "./_section.scss";
+@import "./_sidemenu.scss";
+@import "./_sidecontextmenu.scss";
+@import "./_spacing.scss";
+@import "./_table.scss";
+@import "./_text.scss";
+@import "./_title.scss";
+@import "./_root.scss";
+@import "./_widget.scss";
+
+@import "./third/_echarts.scss";
+@import "./third/_vue-editor.scss";
+
+:root {
+  @include generate-root-colors();
+}

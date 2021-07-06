@@ -1,0 +1,97 @@
+@mixin generate-root-colors() {
+  --theme-border-color: #{$theme-border-color};
+  --theme-shadow: #{$themeShadow1};
+
+  @each $color, $value in $theme-colors {
+    --#{$color}-mixed: #{mix(
+        $value,
+        $theme-color-mixed-color,
+        $theme-color-mixed-percent
+      )}; //#{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    --#{$color}-mixed-1: #{mix(
+        $value,
+        $theme-color-mixed-color,
+        $theme-color-mixed-percent-1
+      )}; //#{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    --#{$color}-mixed-2: #{mix(
+        $value,
+        $theme-color-mixed-color,
+        50%
+      )}; //#{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    --#{$color}-lighten: #{mix($value, white, 5%)}; //#{$value};
+  }
+  @each $color, $value in $theme-colors {
+    --#{$color}-lighten-1: #{mix($value, white, 15%)}; //#{$value};
+  }
+  @each $color, $value in $theme-colors {
+    --#{$color}-lighten-2: #{mix($value, white, 30%)}; //#{$value};
+  }
+  @each $color, $value in $theme-colors {
+    --#{$color}-lighten-3: #{mix($value, white, 45%)}; //#{$value};
+  }
+  @each $color, $value in $theme-colors {
+    --#{$color}-darken: #{mix($value, black, 5%)}; //#{$value};
+  }
+  @each $color, $value in $theme-colors {
+    --#{$color}-darken-1: #{mix($value, black, 15%)}; //#{$value};
+  }
+  @each $color, $value in $theme-colors {
+    --#{$color}-darken-2: #{mix($value, black, 30%)}; //#{$value};
+  }
+  @each $color, $value in $theme-colors {
+    --#{$color}-darken-3: #{mix($value, black, 45%)}; //#{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    --#{$color}-mixed: #{mix(
+        $value,
+        $theme-color-mixed-color,
+        $theme-color-mixed-percent
+      )}; //#{$value};
+  }
+
+  //Overwrite css root variables
+  @each $color, $value in $theme-colors {
+    --#{$color}: #{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    .#{$color} {
+      --color: #{$value};
+
+      --color-mixed: #{mix(
+          $value,
+          $theme-color-mixed-color,
+          $theme-color-mixed-percent
+        )};
+      --color-mixed-1: #{mix(
+          $value,
+          $theme-color-mixed-color,
+          $theme-color-mixed-percent-1
+        )};
+
+      --color-mixed-2: #{mix($value, $theme-color-mixed-color, 50%)};
+
+      --color-trans: #{transparentize($value, $theme-color-mixed-opacity)};
+
+      --color-lighten: #{mix($value, white, 5%)};
+      --color-lighten-1: #{mix($value, white, 15%)};
+      --color-lighten-2: #{mix($value, white, 30%)};
+      --color-lighten-3: #{mix($value, white, 45%)};
+
+      --color-darken: #{mix($value, black, 5%)};
+      --color-darken-1: #{mix($value, black, 15%)};
+      --color-darken-2: #{mix($value, black, 30%)};
+      --color-darken-3: #{mix($value, black, 45%)};
+    }
+  }
+}

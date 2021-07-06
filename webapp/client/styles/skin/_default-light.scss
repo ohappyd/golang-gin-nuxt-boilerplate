@@ -1,0 +1,42 @@
+& {
+  @import "~bootstrap/scss/mixins/_background-variant.scss";
+  @import "~bootstrap/scss/utilities/_background.scss";
+  @import "~bootstrap/scss/utilities/_borders.scss";
+  @import "~bootstrap/scss/utilities/_text.scss";
+  @import "~bootstrap/scss/_alert.scss";
+  @import "~bootstrap/scss/_badge.scss";
+  @import "~bootstrap/scss/_buttons.scss";
+  @import "~bootstrap/scss/_card.scss";
+  @import "~bootstrap/scss/_nav.scss";
+  @import "~bootstrap/scss/_pagination.scss";
+  @import "~bootstrap/scss/_progress.scss";
+  @import "~bootstrap/scss/_tables.scss";
+
+  @import "../_background.scss";
+  @import "../_badge.scss";
+  @import "../_button.scss";
+  @import "../_card.scss";
+  @import "../_form.scss";
+  @import "../_layout.scss";
+  @import "../_link.scss";
+  @import "../_scrollbar.scss";
+  @import "../_sidemenu.scss";
+  @import "../_header.scss";
+  @import "../_text.scss";
+  @import "../_root.scss";
+
+  @include generate-root-colors();
+
+  .card:not(.no-bg) {
+    opacity: $theme-card-opacity;
+    transition: opacity 0.5s;
+    &:hover {
+      opacity: $theme-card-hover-opacity;
+    }
+  }
+
+  background: $theme-body-image;
+  background-size: cover;
+
+  color: $body-color;
+}

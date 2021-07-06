@@ -1,0 +1,47 @@
+@function encode-color($string) {
+  @if type-of($string) == "color" {
+    $hex: str-slice(ie-hex-str($string), 4);
+    $string: unquote("#{$hex}");
+  }
+  $string: "%23" + $string;
+  @return $string;
+}
+
+.custom-control-label::before {
+  left: -1.5rem;
+  background-color: var(--primary-mixed) !important;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.custom-control-label::after {
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{encode-color($primary)}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/></svg>");
+  left: -1.5rem;
+}
+
+.b-custom-control-sm {
+  font-size: 0.73rem;
+  line-height: 0.73rem;
+  //padding-top: 4px;
+}
+
+.custom-control-inline.b-custom-control-sm {
+  label.custom-control-label {
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 8px;
+
+    &::after {
+      top: -3px;
+    }
+    &::before {
+      top: -3px;
+    }
+  }
+}

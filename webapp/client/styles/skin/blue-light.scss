@@ -1,0 +1,10 @@
+//@import "../styles.scss";
+
+/* change style with new variable bootstrap default components ... */
+.skin-blue-light {
+  // Default light fixs
+  @import "../variables/base/all.scss";
+  @import "../variables/skin/_blue-light.scss";
+  @import "../variables/base/_sidemenu.scss";
+  @import "./_default-light.scss";
+}

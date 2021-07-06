@@ -1,0 +1,28 @@
+$threshold: 55%;
+
+$primaryColor: $secondary;
+
+$baseBg: $theme-side-bg;
+$darkenBg: darken($theme-side-bg, 5%);
+$itemColor: $theme-side-color;
+$itemOpenColor: #21ff00; //#fff;
+$itemOpenBg: darken($theme-side-bg, 20%);
+//$itemHoverColor: darken($theme-side-color, 15%);
+$itemHoverColor: contrast-color(
+  $baseBg,
+  darken($theme-side-color, 40%),
+  lighten($theme-side-color, 40%)
+);
+$itemHoverBg: $baseBg; //contrast(  $baseBg,        darken($baseBg, 50%),        lighten($baseBg, 50%)      );//rgba($darkenBg, 0.5);
+$iconColor: $theme-side-icon-color; //lighten($theme-side-color, 20%);
+$iconBg: $baseBg;
+$iconActiveColor: $iconColor; //contrast-color(   $baseBg,      darken($iconColor, 40%) ,  lighten($iconColor, 40%)    );
+$iconActiveBg: darken($theme-side-bg, 10%);
+$iconOpenColor: $primary;
+$iconOpenBg: transparent;
+$mobileItemColor: darken($theme-side-color, 15%);
+$mobileItemBg: $primaryColor;
+$mobileIconBg: transparent;
+$mobileIconColor: darken($theme-side-color, 20%);
+$dropDownColor: darken($theme-side-color, 5%); //#fff;
+$dropDownBg: $theme-side-bg2;
