@@ -1,3 +1,9 @@
 .idea
 Vagrantfile
-webapp/node_modules
+src/webapp/node_modules
+.env
+/.idea/
+.vagrant
+
+# nuxt js
+src/webapp/.nuxt/
