@@ -1,29 +1,20 @@
-// https://eslint.org/docs/user-guide/configuring
-
 module.exports = {
   root: true,
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
   env: {
-    browser: true
+    browser: true,
+    node: true,
+  },
+  parserOptions: {
+    parser: 'babel-eslint',
   },
   extends: [
-    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
-    // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    'plugin:vue/essential',
-    // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-    'standard'
+    '@nuxtjs',
+    'prettier',
+    'prettier/vue',
+    'plugin:prettier/recommended',
+    'plugin:nuxt/recommended',
   ],
-  // required to lint *.vue files
-  plugins: ['vue'],
+  plugins: ['prettier'],
   // add your custom rules here
-  rules: {
-    'arrow-parens': 0,
-    'generator-star-spacing': 0,
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'space-before-function-paren': ['error', 'always'],
-    semi: 'error'
-  }
+  rules: {},
 }

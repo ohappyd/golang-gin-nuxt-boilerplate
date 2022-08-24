@@ -24,6 +24,7 @@ const auth = makeAuthPlugin({
   }
 })*/
 
+/*
 const requireServices = require.context(
   // The path where the service modules live
   './services',
@@ -35,6 +36,7 @@ const requireServices = require.context(
 const servicePlugins = requireServices
   .keys()
   .map(modulePath => requireServices(modulePath).default)
+*/
 
 export const modules = {
   // ...customModules
@@ -72,4 +74,4 @@ export const getters = {
   // Custom getters
 }
 
-export const plugins = [ ...servicePlugins]
+export const plugins = []
